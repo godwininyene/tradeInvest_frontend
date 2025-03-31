@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0f419a] text-white py-12">
+    <footer className="bg-[#0f419a] text-white py-12 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div data-aos="fade-right" data-aos-duration="1000">
           <h2 className="text-xl font-bold">TradeInvest</h2>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const SectionAbout = ()=>{
     return(
         <section 
-        className="py-20 text-white px-4 lg:px-0"
+        className="py-20 text-white px-4 lg:px-0 overflow-hidden"
         style={{
             background: "linear-gradient(135deg, #0f419a 0%, #1f156e 100%)"
         }}
