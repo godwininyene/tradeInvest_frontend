@@ -3,7 +3,7 @@ import {IoMdInformationCircle} from 'react-icons/io'
 import CryptoConcepts from '../components/CryptoConcepts'
 import MissionVision from '../components/MissionVision'
 import WhyUs from '../components/WhyUs'
-import CTA from '../components/CTA.JSX'
+import CTA from '../components/CTA'
 import Testimonials from '../components/Testimonials'
 import SectionAbout from '../components/SectionAbout'
 const About = ()=>{
