@@ -2,7 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import { StepperContext } from "../contexts/StepperContext";
 import InputField from "../common/InputField";
 import SelectField from "../common/SelectField";
-import axios from "../../../lib/axios";
+import axios from "../../lib/axios";
+
 
 const Address = ()=>{
     const{formData, setFormData, errors} = useContext(StepperContext);
