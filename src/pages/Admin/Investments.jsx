@@ -12,7 +12,7 @@ import {
   BiLoaderCircle
 } from 'react-icons/bi';
 import moment from 'moment';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import LoadingIndicator from '../../components/common/LoadingIndicator';
 import SelectField from '../../components/common/SelectField';
 import EmptyState from '../../components/common/EmptyState';

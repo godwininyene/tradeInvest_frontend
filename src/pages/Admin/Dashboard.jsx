@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import LoadingIndicator from '../../components/common/LoadingIndicator';
 import moment from 'moment/moment';
 import { HiPresentationChartBar } from 'react-icons/hi';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import { useRef } from 'react';
 import StatusBadge from '../../components/common/StatusBadge';
 

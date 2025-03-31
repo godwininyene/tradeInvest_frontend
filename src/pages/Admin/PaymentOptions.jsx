@@ -15,7 +15,7 @@ import {
 } from 'react-icons/bs';
 import { GiBank } from 'react-icons/gi';
 import { FaBitcoin } from 'react-icons/fa';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import Modal from '../../components/CustomModal';
 import LoadingIndicator from '../../components/common/LoadingIndicator';
 import InputField from '../../components/common/InputField';

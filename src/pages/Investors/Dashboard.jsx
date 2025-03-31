@@ -6,7 +6,7 @@ import defaulAvatar from '../../assets/images/default.jpg';
 import { FaChartLine, FaHistory } from 'react-icons/fa';
 import { useRef, useState, useEffect } from 'react';
 import { HiPresentationChartBar } from 'react-icons/hi';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import moment from 'moment/moment';
 
 export default function Dashboard() {

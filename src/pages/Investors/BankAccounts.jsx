@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { BiSave } from 'react-icons/bi';
 import { FaTimesCircle } from 'react-icons/fa';
 import { MdAdd } from 'react-icons/md'
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import SubmitButton from '../../components/common/SubmitButton';
 import InputField from '../../components/common/InputField';
 import SelectField from '../../components/common/SelectField';

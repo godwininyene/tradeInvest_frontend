@@ -14,7 +14,7 @@ import {
   FaExchangeAlt,
   FaPercentage
 } from 'react-icons/fa';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import LoadingIndicator from '../../components/common/LoadingIndicator';
 import ToggleSwitch from '../../components/common/ToggleSwitch';
 import InputField from '../../components/common/InputField';

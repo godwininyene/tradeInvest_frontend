@@ -7,7 +7,7 @@ import EmploymentDetails from '../../components/steps/EmploymentDetails';
 import Address from '../../components/steps/Address';
 import Final from '../../components/steps/Final';
 import VerifyEmail from '../../components/steps/VerifyEmail';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import { Link } from 'react-router-dom';
 
 export default function Register() {

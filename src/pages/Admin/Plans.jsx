@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { BiEditAlt, BiSave, BiTrashAlt } from 'react-icons/bi';
 import { ImPieChart } from 'react-icons/im';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import LoadingIndicator from '../../components/common/LoadingIndicator';
 import Modal from '../../components/CustomModal';
 import InputField from '../../components/common/InputField';

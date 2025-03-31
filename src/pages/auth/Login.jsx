@@ -3,7 +3,7 @@ import Label from "../../components/common/Label"
 import SubmitButton from "../../components/common/SubmitButton"
 import { IoLogInOutline } from 'react-icons/io5';
 import { Link, useSearchParams, useNavigate } from "react-router-dom";
-import axios from "../../../lib/axios";
+import axios from '../../lib/axios';
 import { useState } from "react";
 export default function Login() {
     const[searchParams, setSearchParams] = useSearchParams(); 

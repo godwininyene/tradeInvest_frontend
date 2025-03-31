@@ -16,7 +16,7 @@ import {
 } from 'react-icons/fa';
 import { BsEye } from 'react-icons/bs';
 import moment from 'moment';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import Modal from '../../components/CustomModal';
 import LoadingIndicator from '../../components/common/LoadingIndicator';
 import EmptyState from '../../components/common/EmptyState';

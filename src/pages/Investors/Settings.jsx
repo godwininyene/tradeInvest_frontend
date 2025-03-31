@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { FaUser, FaLock, FaBell, FaEnvelope, FaGlobe } from 'react-icons/fa';
 import { BsCreditCard } from 'react-icons/bs';
 import { RiDeleteBinLine } from 'react-icons/ri';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import LoadingIndicator from '../../components/common/LoadingIndicator';
 import { toast } from 'react-hot-toast';
 import InputField from '../../components/common/InputField';

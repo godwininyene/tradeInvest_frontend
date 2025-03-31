@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BiArrowBack, BiCheckCircle } from 'react-icons/bi';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import SubmitButton from '../../components/common/SubmitButton';
 
 const Withdrawal = () => {

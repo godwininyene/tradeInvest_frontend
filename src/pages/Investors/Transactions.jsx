@@ -4,7 +4,7 @@ import moment from 'moment/moment';
 import { useEffect, useState } from 'react';
 import { BiTransferAlt, BiPlus, BiMinus, BiCreditCard } from 'react-icons/bi';
 import BankAccounts from './BankAccounts';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import { Link } from 'react-router-dom';
 
 export default function Transactions() {

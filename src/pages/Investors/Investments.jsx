@@ -4,7 +4,7 @@ import Invest from './Invest';
 import moment from 'moment/moment';
 import LoadingIndicator from '../../components/common/LoadingIndicator';
 import { FaChartLine, FaArrowRight } from 'react-icons/fa';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 
 export default function Investments() {
     const [invest, setInvestState] = useState(false);

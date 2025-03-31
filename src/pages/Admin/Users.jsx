@@ -20,7 +20,7 @@ import EmptyState from '../../components/common/EmptyState';
 import Modal from '../../components/CustomModal';
 import SelectField from '../../components/common/SelectField';
 import FundAccount from './FundAccount';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import coverImage from './../../assets/images/forex.jpeg';
 import defaultAvatar from './../../assets/images/default.jpg'
 import UserDetail from './UserDetails';

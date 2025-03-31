@@ -2,7 +2,7 @@ import LoadingIndicator from '../../components/common/LoadingIndicator';
 import React, {useEffect, useState} from 'react';
 import { AiOutlineTransaction } from 'react-icons/ai';
 import { BiArrowBack } from 'react-icons/bi';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import SubmitButton from '../../components/common/SubmitButton';
 
 const Invest = ({onBack, wallet, onInvestComplete}) => {

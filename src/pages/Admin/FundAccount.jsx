@@ -4,7 +4,7 @@ import defaultAvatar from './../../assets/images/default.jpg'
 import React, { useState } from 'react'
 import { BiArrowBack } from 'react-icons/bi';
 import { AiOutlineTransaction } from 'react-icons/ai';
-import axios from '../../../lib/axios';
+import axios from '../../lib/axios';
 import InputField from '../../components/common/InputField';
 import SelectField from '../../components/common/SelectField';
 
