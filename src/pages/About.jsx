@@ -1,6 +1,6 @@
 import bannerBg from './../assets/images/about_bg.jpg'
 import {IoMdInformationCircle} from 'react-icons/io'
-import CryptoConcepts from '../components/Cryptoconcepts'
+import CryptoConcepts from '../components/CryptoConcepts'
 import MissionVision from '../components/MissionVision'
 import WhyUs from '../components/WhyUs'
 import CTA from '../components/CTA.JSX'
