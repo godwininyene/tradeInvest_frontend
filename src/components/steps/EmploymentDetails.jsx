@@ -2,7 +2,7 @@ import { useContext, useEffect , useState} from "react";
 import { StepperContext } from "../contexts/StepperContext";
 import InputField from "../common/InputField";
 import SelectField from "../common/SelectField";
-import axios from "../../../lib/axios";
+import axios from "../../lib/axios";
 const EmploymentDetails = ()=>{
     const{formData, setFormData, errors} = useContext(StepperContext);
     const handleChange = e =>{
