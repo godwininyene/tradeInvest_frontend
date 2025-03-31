@@ -5,7 +5,7 @@ import Sponsors from "../components/Sponsors";
 import Testimonials from "../components/Testimonials";
 import WhyUs from "../components/WhyUs";
 import HowItWorks from "../components/HowItWorks";
-import CTA from "../components/CTA.JSX";
+import CTA from "../components/CTA";
 import SectionAbout from "../components/SectionAbout";
 const Home = () => {
     return (
