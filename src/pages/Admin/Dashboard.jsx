@@ -42,13 +42,13 @@ export default function Dashboard() {
 
 
     return (
-        <div className="p-6 space-y-6">
+        <div className="space-y-6">
            
             {/* Summary Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                 {/* Users Card */}
-                <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4 flex items-start">
-                    <div className="p-3 rounded-full bg-blue-100 dark:bg-slate-700 mr-4">
+                <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4 flex-col lg:flex-row flex items-start">
+                    <div className="p-3 rounded-full bg-blue-100 dark:bg-slate-700 lg:mr-4 mb-2 lg:mb-0">
                         <FaUsers className="text-blue-600 dark:text-blue-400 text-xl" />
                     </div>
                     <div>
@@ -66,8 +66,8 @@ export default function Dashboard() {
                 </div>
 
                 {/* Balance Card */}
-                <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4 flex items-start">
-                    <div className="p-3 rounded-full bg-green-100 dark:bg-slate-700 mr-4">
+                <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4 flex-col lg:flex-row flex items-start">
+                    <div className="p-3 rounded-full bg-green-100 dark:bg-slate-700 lg:mr-4 mb-2 lg:mb-0">
                         <BiWallet className="text-green-600 dark:text-green-400 text-xl" />
                     </div>
                     <div>
@@ -87,8 +87,8 @@ export default function Dashboard() {
                 </div>
 
                 {/* Profit Card */}
-                <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4 flex items-start">
-                    <div className="p-3 rounded-full bg-purple-100 dark:bg-slate-700 mr-4">
+                <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4 flex-col lg:flex-row flex items-start">
+                    <div className="p-3 rounded-full bg-purple-100 dark:bg-slate-700 lg:mr-4 mb-2 lg:mb-0">
                         <BsCashCoin className="text-purple-600 dark:text-purple-400 text-xl" />
                     </div>
                     <div>
@@ -108,8 +108,8 @@ export default function Dashboard() {
                 </div>
 
                 {/* Referral Card */}
-                <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4 flex items-start">
-                    <div className="p-3 rounded-full bg-amber-100 dark:bg-slate-700 mr-4">
+                <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4 flex-col lg:flex-row flex items-start">
+                    <div className="p-3 rounded-full bg-amber-100 dark:bg-slate-700 lg:mr-4 mb-2 lg:mb-0">
                         <FaUsersLine className="text-amber-600 dark:text-amber-400 text-xl" />
                     </div>
                     <div>

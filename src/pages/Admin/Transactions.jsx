@@ -191,7 +191,7 @@ export default function Transactions() {
 
 
   return (
-    <div className="space-y-6 p-4">
+    <div className="space-y-6">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <h1 className="text-2xl font-bold flex items-center gap-2">
@@ -261,21 +261,21 @@ export default function Transactions() {
       </div>
 
       {/* Stats Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4">
-          <div className="flex items-center justify-between">
+          <div className="flex lg:items-center lg:justify-between flex-col-reverse lg:flex-row">
             <div>
               <p className="text-sm text-gray-500 dark:text-gray-400">Total Transactions</p>
               <p className="text-2xl font-bold">{filteredTransactions.length}</p>
             </div>
-            <div className="p-3 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300">
+            <div className="p-3 rounded-full h-12 w-12 mb-2 lg:mb-0 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300">
               <BiTransferAlt className="h-6 w-6" />
             </div>
           </div>
         </div>
         
         <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4">
-          <div className="flex items-center justify-between">
+          <div className="flex lg:items-center lg:justify-between flex-col-reverse lg:flex-row">
             <div>
               <p className="text-sm text-gray-500 dark:text-gray-400">Total Deposits</p>
               <p className="text-2xl font-bold">
@@ -286,14 +286,14 @@ export default function Transactions() {
                 }
               </p>
             </div>
-            <div className="p-3 rounded-full bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300">
+            <div className="p-3 rounded-full h-12 w-12 mb-2 lg:mb-0 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300">
               <BiDownArrowAlt className="h-6 w-6" />
             </div>
           </div>
         </div>
         
         <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4">
-          <div className="flex items-center justify-between">
+          <div className="flex lg:items-center lg:justify-between flex-col-reverse lg:flex-row">
             <div>
               <p className="text-sm text-gray-500 dark:text-gray-400">Total Withdrawals</p>
               <p className="text-2xl font-bold">
@@ -304,21 +304,21 @@ export default function Transactions() {
                 }
               </p>
             </div>
-            <div className="p-3 rounded-full bg-red-100 dark:bg-red-900 text-red-600 dark:text-red-300">
+            <div className="p-3 rounded-full h-12 w-12 mb-2 lg:mb-0 bg-red-100 dark:bg-red-900 text-red-600 dark:text-red-300">
               <BiUpArrowAlt className="h-6 w-6" />
             </div>
           </div>
         </div>
         
         <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4">
-          <div className="flex items-center justify-between">
+          <div className="flex lg:items-center lg:justify-between flex-col-reverse lg:flex-row">
             <div>
               <p className="text-sm text-gray-500 dark:text-gray-400">Pending Transactions</p>
               <p className="text-2xl font-bold">
                 {filteredTransactions.filter(tx => tx.status === 'pending').length}
               </p>
             </div>
-            <div className="p-3 rounded-full bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-300">
+            <div className="p-3 rounded-full h-12 w-12 mb-2 lg:mb-0 bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-300">
               <FaMoneyBillWave className="h-6 w-6" />
             </div>
           </div>

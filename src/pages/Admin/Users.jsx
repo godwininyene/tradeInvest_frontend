@@ -133,7 +133,7 @@ export default function Users() {
     };
  
     return (
-        <div className="space-y-6 p-6">
+        <div className="space-y-6 ">
              {/* Show Default User List Page */}
              {currentScreen === 'users_list' && <>
                 {/* Header */}
@@ -187,56 +187,56 @@ export default function Users() {
                 </div>
 
                 {/* Stats Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                     <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4">
-                        <div className="flex items-center justify-between">
+                        <div className="flex lg:items-center lg:justify-between flex-col-reverse lg:flex-row">
                             <div>
                                 <p className="text-sm text-gray-500 dark:text-gray-400">Total Users</p>
                                 <p className="text-2xl font-bold">{filteredUsers.length}</p>
                             </div>
-                            <div className="p-3 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300">
+                            <div className="p-3 rounded-full h-12 w-12 mb-2 lg:mb-0 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300">
                                 <BiUser className="h-6 w-6" />
                             </div>
                         </div>
                     </div>
                     
                     <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4">
-                        <div className="flex items-center justify-between">
+                          <div className="flex lg:items-center lg:justify-between flex-col-reverse lg:flex-row">
                             <div>
                                 <p className="text-sm text-gray-500 dark:text-gray-400">Active Users</p>
                                 <p className="text-2xl font-bold">
                                     {filteredUsers.filter(u => u.status === 'active').length}
                                 </p>
                             </div>
-                            <div className="p-3 rounded-full bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300">
+                            <div className="p-3 rounded-full h-12 w-12 mb-2 lg:mb-0 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300">
                                 <FaUserCheck className="h-6 w-6" />
                             </div>
                         </div>
                     </div>
                     
                     <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4">
-                        <div className="flex items-center justify-between">
+                        <div className="flex lg:items-center lg:justify-between flex-col-reverse lg:flex-row">
                             <div>
                                 <p className="text-sm text-gray-500 dark:text-gray-400">Pending Users</p>
                                 <p className="text-2xl font-bold">
                                     {filteredUsers.filter(u => u.status === 'pending').length}
                                 </p>
                             </div>
-                            <div className="p-3 rounded-full bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300">
+                            <div className="p-3 rounded-full h-12 w-12 mb-2 lg:mb-0 bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300">
                                 <FaUserClock className="h-6 w-6" />
                             </div>
                         </div>
                     </div>
                     
                     <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-4">
-                        <div className="flex items-center justify-between">
+                        <div className="flex lg:items-center lg:justify-between flex-col-reverse lg:flex-row">
                             <div>
                                 <p className="text-sm text-gray-500 dark:text-gray-400">Total Balance</p>
                                 <p className="text-2xl font-bold">
                                     ${filteredUsers.reduce((sum, user) => sum + (user.wallet[0]?.balance || 0), 0).toLocaleString()}
                                 </p>
                             </div>
-                            <div className="p-3 rounded-full bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300">
+                            <div className="p-3 rounded-full h-12 w-12 mb-2 lg:mb-0 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300">
                                 <BiWallet className="h-6 w-6" />
                             </div>
                         </div>

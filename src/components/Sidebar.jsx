@@ -5,12 +5,17 @@ import LoadingIndicator from "./common/LoadingIndicator";
 import logo from './../assets/images/logo.png';
 import { HiOutlineLogout } from 'react-icons/hi';
 import { logout } from '../utils/logout';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-const SideBar = ({ user, isToggle }) => {
+const SideBar = ({ user, isToggle, setToggle }) => {
     const location = useLocation();
     const [processing, setProcessing] = useState(false);
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+
+    // Close sidebar when route changes
+    useEffect(() => {
+        setToggle(false);
+    }, [location.pathname, setToggle]);
 
     const user_links = [
         { name: "Dashboard", path: "investor/dashboard", icon: <FaTachometerAlt /> },
@@ -53,9 +58,9 @@ const SideBar = ({ user, isToggle }) => {
 
     return (
         <div
-            className={`fixed top-[65px] md:top-0 h-screen w-56 bg-white dark:bg-slate-800 shadow-lg transition-transform duration-300 ease-in-out transform ${
+            className={`fixed top-[65px] md:top-0 h-[calc(100vh-65px)] md:h-screen w-56 bg-white dark:bg-slate-800 shadow-lg transition-transform duration-300 ease-in-out transform ${
                 isToggle ? "translate-x-0" : "-translate-x-full md:translate-x-0"
-            } z-40`}
+            } z-40 overflow-y-auto`}
         >
             <div className="flex flex-col h-full p-3">
                 {/* Brand Name */}
