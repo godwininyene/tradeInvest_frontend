@@ -57,7 +57,7 @@ const SelectField = ({
       }
       // Fallback for other object structures
       return (
-        <option key={index} value={JSON.stringify(option)}>
+        <option key={index} value={option.name || JSON.stringify(option)}>
           {option.name || option.title || JSON.stringify(option)}
         </option>
       );
