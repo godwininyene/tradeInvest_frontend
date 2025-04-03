@@ -12,6 +12,7 @@ import {
     BiUserCheck,
     BiLogoFlickr
   } from 'react-icons/bi';
+import { FaUserTimes } from 'react-icons/fa';
 const UserDetail = ({ user, onStatusChange, onDelete, onFund, updating, deleting, statusBadge }) => {
     return (
         <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg overflow-hidden">
@@ -132,6 +133,7 @@ const UserDetail = ({ user, onStatusChange, onDelete, onFund, updating, deleting
                             <button className="bg-red-500 cursor-pointer text-white py-1 px-2 rounded-sm block mx-auto"  onClick={() => onStatusChange('deny', user)}>
                                 {updating ? <LoadingIndicator size={6} /> : <FaUserTimes  className="h-4 w-4"  /> }
                             </button>
+                          
                             <span className="capitallize text-sm">
                                 Deny Access
                             </span>
