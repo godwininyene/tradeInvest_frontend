@@ -79,7 +79,7 @@ const Header = () => {
                     </div>
 
                     {/* Google Translate positioned inside nav but on the right */}
-                    <div className='hidden lg:block absolute left-52 top-20 transform -translate-y-1/2'>
+                    <div className=' absolute left-52 top-20 transform -translate-y-1/2'>
                         <GoogleTranslate />
                     </div>
                 </nav>

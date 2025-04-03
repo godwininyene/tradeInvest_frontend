@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Headerbar = ({ user, isToggle, toggle }) => {
     return (
-        <header className="fixed z-30 top-0 left-0 right-0 md:left-56 py-3 px-4 bg-white dark:bg-slate-900 shadow-sm">
+        <header className="fixed z-30 top-0 left-0 right-0 md:left-56 py-3 px-4 bg-white dark:bg-slate-900 shadow-sm h-[65px]">
             <div className="flex items-center justify-between">
                 {/* Toggle Button (Mobile Only) */}
                 <button
