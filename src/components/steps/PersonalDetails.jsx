@@ -28,7 +28,6 @@ const PersonalDetails = ()=>{
                     label={'Gender'}
                     options={['Male', 'Female']}
                     error={errors.gender}
-                    isRequired={false}
                 />
             </div>
 
