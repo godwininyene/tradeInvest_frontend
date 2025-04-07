@@ -37,25 +37,35 @@ const Address = ()=>{
                 />
 
                 <InputField
-                    name={'townCity'}
-                    placeholder={'Town/City/Region'}
-                    label="Town/City/Region"
-                    value={formData['townCity' || " "]}
-                    onChange={handleChange}
-                    error={errors.townCity}
-                />
-            </div>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-2 mb-4 relative'>
-                <InputField
-                    name={'firstAddress'}
+                    name={'Address'}
                     placeholder={'First line of address'}
                     label="Address 1"
                     value={formData['firstAddress' || " "]}
                     onChange={handleChange}
                     error={errors.firstAddress}
                 />
+
+
+                {/* <InputField
+                    name={'townCity'}
+                    placeholder={'Town/City/Region'}
+                    label="Town/City/Region"
+                    value={formData['townCity' || " "]}
+                    onChange={handleChange}
+                    error={errors.townCity}
+                /> */}
+            </div>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-2 mb-4 relative'>
+                {/* <InputField
+                    name={'Address'}
+                    placeholder={'First line of address'}
+                    label="Address 1"
+                    value={formData['firstAddress' || " "]}
+                    onChange={handleChange}
+                    error={errors.firstAddress}
+                /> */}
                    
-                <InputField
+                {/* <InputField
                     name={'secondAddress'}
                     placeholder={'Second line of address'}
                     label="Address 2 (Optional)"
@@ -63,7 +73,7 @@ const Address = ()=>{
                     onChange={handleChange}
                     isRequired={false}
                     error={errors.secondAddress}
-                />
+                /> */}
             </div>
         </>
         

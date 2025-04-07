@@ -74,7 +74,7 @@ const PersonalDetails = ()=>{
                 />
                    
             </div>
-            <h4 className="mt-7">Additional Information</h4>
+            {/* <h4 className="mt-7">Additional Information</h4>
             <SelectField 
                 name='reason'
                 value={formData['reason' || " "]}
@@ -83,7 +83,7 @@ const PersonalDetails = ()=>{
                 options={['Income Earning', 'Hedging', 'Speculative']}
                 error={errors.reason}
                 
-            />
+            /> */}
         </>
     )
 }
