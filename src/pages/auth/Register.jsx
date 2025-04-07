@@ -15,7 +15,7 @@ export default function Register() {
     const formRef = useRef(null);
     const [processing, setProcessing] = useState(false);
     const [formData, setFormData] = useState({
-        fullname: '',
+        name: '',
         gender:'',
         phone:'',
         email:'',
