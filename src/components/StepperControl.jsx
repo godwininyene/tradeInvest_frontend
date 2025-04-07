@@ -4,7 +4,7 @@ import NextButton from './common/NextButton';
 const StepperControl = ({ handleClick, steps, currentStep, handleSubmit, processing }) => {
     return (
         <div className="container flex justify-between p-4 mt-4 mb-8">
-            {currentStep !== 4 && (
+            {currentStep !== 3 && (
                 <>
                     {/* Back Button */}
                     <BackButton
