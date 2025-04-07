@@ -13,7 +13,7 @@ const StepperControl = ({ handleClick, steps, currentStep, handleSubmit, process
                     />
 
                     {/* Next Button (Hidden on step 3) */}
-                    {currentStep !== 3 && (
+                    {currentStep !== 2 && (
                         <NextButton
                             onClick={() => handleClick("next")}
                             label={currentStep === steps.length - 1 ? "Confirm" : "Next"}
