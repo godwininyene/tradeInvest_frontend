@@ -50,7 +50,7 @@ function App() {
   const router = createBrowserRouter(createRoutesFromElements(
     <>
 
-      <Route path='/' element={<BaseLayout />}>
+      <Route path='/' element={<BaseLayout />} errorElement={<Error />}>
         <Route index element={<Home />}></Route>
         <Route path='/about_us' element={<About />}></Route>
         <Route path='/services' element={<Services />}></Route>
@@ -65,7 +65,7 @@ function App() {
       </Route>
 
 
-      <Route path='/manage' element={<AuthenticatedLayout />}    loader={async({request})=> await requireAuth(request)}>
+      <Route path='/manage' element={<AuthenticatedLayout />} errorElement={<Error />}   loader={async({request})=> await requireAuth(request)}>
         {/* Admin Related Routes */}
         <Route path='admin/dashboard' element={<Dashboard />}></Route>
         <Route path='admin/investments' element={<Investments />}></Route>
