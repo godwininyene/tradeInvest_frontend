@@ -72,7 +72,7 @@ export default function Register() {
         try {
             const response = await axios.post('api/v1/users/signup', formData);
             // If response is successful, handle success (e.g., redirect or show a message)
-            if(response.data.status == 'success') setCurrentStep(4)
+            if(response.data.status == 'success') setCurrentStep(3)
             setProcessing(false)
             console.log("User successfully registered");
             
