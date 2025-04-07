@@ -21,7 +21,7 @@ const StepperControl = ({ handleClick, steps, currentStep, handleSubmit, process
                     )}
 
                     {/* Submit Button (Only visible on step 3) */}
-                    {currentStep === 3 && (
+                    {currentStep === 2 && (
                         <SubmitButton
                             onClick={handleSubmit}
                             processing={processing}
