@@ -85,14 +85,14 @@ const UserDetail = ({ user, onStatusChange, onDelete, onFund, updating, deleting
                         </div>
                     </div>
 
-                    <div className="flex items-center gap-3 text-sm">
+                    {/* <div className="flex items-center gap-3 text-sm">
                         
                         <FaUpwork className="h-5 w-5 text-gray-500 dark:text-gray-400" />
                         <div className='text-xs'>
                             <p className="text-gray-500 dark:text-gray-400">Employment Status</p>
                             <p className="font-medium capitalize">{user.employmentStatus || 'Not specified'}</p>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="flex items-center gap-3 text-sm">
                        

@@ -39,7 +39,7 @@ export default function Register() {
 
     const steps = [
         "Personal",
-        "Employment",
+        // "Employment",
         "Address",
         "Verify Email",
         "Final"
@@ -47,7 +47,7 @@ export default function Register() {
 
     const stepFields = {
         1: ['name', 'gender', 'phone', 'email', 'password', 'passwordConfirm', 'reason'], // Step 1: Personal Details
-        2: ['employmentStatus', 'taxResidence', 'taxNumber'], // Step 2: Employment Details
+        // 2: ['employmentStatus', 'taxResidence', 'taxNumber'], // Step 2: Employment Details
         3: ['country','firstAddress', 'secondAddress', 'townCity'] // Step 3: Address
     };
 
@@ -106,14 +106,14 @@ export default function Register() {
         switch(step){
             case 1: 
               return  <PersonalDetails />
+            // case 2:
+            //     return <EmploymentDetails />
             case 2:
-                return <EmploymentDetails />
-            case 3:
                 return <Address />
-            case 4:
+            case 3:
                 return <VerifyEmail />
 
-            case 5:
+            case 4:
                 return <Final />
             default:
         }
@@ -131,14 +131,6 @@ export default function Register() {
                 formRef.current.reportValidity();
             }
         }
-
-
-        // let newStep = currentStep;
-		// (direction == "next") ? newStep++ : newStep--;
-		// Check if steps are within the boundary
-		// if (newStep > 0 && newStep <= steps.length) {
-		// 	setCurrentStep(newStep)
-		// }
     }
     return (
         <>
