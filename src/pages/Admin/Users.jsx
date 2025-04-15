@@ -368,7 +368,7 @@ const ListDisplay = ({ users, onView, onStatusChange, onDelete, updating, deleti
                                         
                                         {user.status=== 'pending' ? (
                                             <button
-                                                onClick={() => onStatusChange('approve', user)}
+                                                onClick={() => onStatusChange(user._id, 'approve',)}
                                                 className="text-green-600 cursor-pointer dark:text-green-400 hover:text-green-900 dark:hover:text-green-300"
                                                 disabled={updating && selectedUser?._id === user._id}
                                             >
@@ -380,7 +380,7 @@ const ListDisplay = ({ users, onView, onStatusChange, onDelete, updating, deleti
                                             </button>
                                         ) : user.status === 'active' ? (
                                             <button
-                                                onClick={() => onStatusChange('deactivate', user)}
+                                                onClick={() => onStatusChange(user._id,'deactivate')}
                                                 className="text-orange-600 cursor-pointer dark:text-orange-400 hover:text-orange-900 dark:hover:text-orange-300"
                                                 disabled={updating && selectedUser?._id === user._id}
                                             >
@@ -392,7 +392,7 @@ const ListDisplay = ({ users, onView, onStatusChange, onDelete, updating, deleti
                                             </button>
                                         ) : (
                                             <button
-                                                onClick={() => onStatusChange('approve', user)}
+                                                onClick={() => onStatusChange(user._id, 'approve')}
                                                 className="text-green-600 cursor-pointer dark:text-green-400 hover:text-green-900 dark:hover:text-green-300"
                                                 disabled={updating && selectedUser?._id === user._id}
                                             >
