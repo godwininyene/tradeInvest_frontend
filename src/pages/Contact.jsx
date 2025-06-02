@@ -26,8 +26,8 @@ const Contact = () => {
 
             {/* Contact Form and Information Section */}
             <section className="py-16 bg-white">
-                <div className="max-w-6xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div data-aos="fade-up" className="p-8 rounded-lg shadow-md">
+                <div className="max-w-6xl mx-auto px-3 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div data-aos="fade-up" className="p-3 rounded-lg shadow-md">
                         <h2 className="text-3xl font-bold mb-6 uppercase text-primary-light">Contact Form</h2>
                         <form className="space-y-6">
                             <input type="text" placeholder="Your Name" className="w-full p-4 rounded-lg border border-gray-300 transition duration-500 focus:outline-none  focus:border-primary-light" />
@@ -36,7 +36,7 @@ const Contact = () => {
                             <button className="bg-yellow-500 text-white cursor-pointer py-3 px-6 rounded-lg hover:bg-yellow-600 transition duration-300">Send Message</button>
                         </form>
                     </div>
-                    <div data-aos="fade-up" className="p-8">
+                    <div data-aos="fade-up" className="p-3">
                         <h2 className="text-3xl font-bold mb-6 uppercase text-primary-light">Contact Information</h2>
                         <p className="mb-4"><span className='font-bold'>Phone:</span> +123 456 7890</p>
                         <p className="mb-4"><span className='font-bold'>Email: </span> support@tradeinvest.com</p>
@@ -47,7 +47,7 @@ const Contact = () => {
 
             {/* FAQ Section */}
             <section className="py-16 bg-white">
-                <div className="max-w-6xl mx-auto px-8 text-center">
+                <div className="max-w-6xl mx-auto px-3 text-center">
                     <h2 className="text-3xl font-bold mb-6 uppercase text-primary-light">Frequently Asked Questions</h2>
                     <p className="mb-8">Find answers to common questions about investing with us.</p>
                     <ul className="text-left space-y-4">

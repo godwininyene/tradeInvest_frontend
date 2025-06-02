@@ -48,14 +48,14 @@ const Hero = () => {
 
                                     {/* Buttons */}
                                     <div 
-                                        className="flex gap-2 lg:gap-3 mb-10 md:mb-28"
+                                        className="flex gap-2 lg:gap-3 mb-10 md:mb-28 justify-center lg:justify-normal"
                                         data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
                                     >
-                                        <Link to="users/login" className="py-3 px-5 flex w-full  lg:w-auto justify-center items-center mx-2 md:mx-0 rounded-3xl bg-primary-light hover:bg-black text-white font-bold">
+                                        <Link to="users/login" className="py-2 lg:py-3 px-3 lg:px-5 flex items-center  md:mx-0 rounded-3xl bg-primary-light hover:bg-black text-white font-bold">
                                             <IoLogInOutline className="w-6 h-6 inline-block mr-2"  /> Login
                                             
                                         </Link>
-                                        <Link to='users/register' className="py-3 px-5 w-full lg:w-auto  text-center rounded-3xl border border-primary bg-black bg-opacity-50 text-white hover:bg-black font-bold">
+                                        <Link to='users/register' className="py-2 lg:py-3 px-3 lg:px-5 rounded-3xl border border-primary bg-black bg-opacity-50 text-white hover:bg-black font-bold">
                                             Start Investing
                                         </Link>
                                     </div>

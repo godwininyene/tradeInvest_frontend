@@ -14,9 +14,9 @@ const Footer = () => {
     <footer className="bg-[#0f419a] text-white py-12 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div data-aos="fade-right" data-aos-duration="1000">
-          <h2 className="text-xl font-bold">TradeInvest</h2>
+          <h2 className="text-xl font-bold">InvestmentCrestCapital</h2>
           <p className="mt-3 text-gray-300">
-            TradeInvest is your trusted gateway to the world of cryptocurrency
+            InvestmentCrestCapital is your trusted gateway to the world of cryptocurrency
             investments. With a secure platform, expert-backed strategies, and a
             commitment to innovation, we help investors grow their digital
             assets effortlessly. Join us to explore high-yield crypto
@@ -32,7 +32,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center space-x-2">
               <FaEnvelope className="text-yellow-400" />
-              <span>support@tradeinvest.com</span>
+              <span>support@investmentcrestcapital.com</span>
             </li>
             <li className="flex items-center space-x-2">
               <FaMapMarkerAlt className="text-yellow-400" />
@@ -89,7 +89,7 @@ const Footer = () => {
         data-aos-duration="1000"
         data-aos-delay="400"
       >
-        © {new Date().getFullYear()} TradeInvest. All rights reserved.
+        © {new Date().getFullYear()} InvestmentCrestCapital. All rights reserved.
       </div>
     </footer>
   );

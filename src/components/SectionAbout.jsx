@@ -22,7 +22,7 @@ const SectionAbout = ()=>{
             <div className="lg:w-1/2 lg:pl-12 text-center lg:text-left mt-6 lg:mt-0">
                 <h2 className="text-4xl font-bold mb-4 uppercase" data-aos="fade-up">About Our Investment Platform</h2>
                 <p className="text-lg mb-6" data-aos="fade-up" data-aos-delay="200">
-                    At TradeInvest, we are more than just a cryptocurrency investment platform—we are a community of forward-thinking investors.
+                    At InvestmentCrestCapital, we are more than just a cryptocurrency investment platform—we are a community of forward-thinking investors.
                     Our secure and transparent system provides you with high returns, instant transactions, and 24/7 support.
                 </p>
                 <p className="text-lg mb-6" data-aos="fade-up" data-aos-delay="400">

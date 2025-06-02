@@ -15,7 +15,7 @@ const MissionVision = () => {
                     data-aos-delay="100" 
                     className="text-gray-600 mt-2"
                 >
-                    At TradeInvest, we are committed to revolutionizing cryptocurrency investments through security, transparency, and innovation.
+                    At InvestmentCrestCapital, we are committed to revolutionizing cryptocurrency investments through security, transparency, and innovation.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                     <div 

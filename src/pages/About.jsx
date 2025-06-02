@@ -20,7 +20,7 @@ const About = ()=>{
                                     <IoMdInformationCircle />
                                     About Us
                                 </span>
-                                <span className='block text-3xl font-bold uppercase'>TradeInvest Platform</span>
+                                <span className='block text-base lg:text-3xl font-bold uppercase'>InvestmentCrestCapital</span>
                                 <hr className='w-1/4 border-2 border-primary-light' />
                             </div>  
                         </div>

@@ -31,7 +31,7 @@ const Header = () => {
                 <nav className='flex items-center justify-between flex-wrap lg:flex-nowrap px-5 py-4'>
                     <Link to="/" className='mr-4 flex items-center'>
                         <img src={logo} alt="" className="h-10"/>
-                        <h2 className='text-white font-bold text-xl ml-1'>TradeInvest</h2>
+                        <h2 className='text-white font-bold text-xl ml-1'>InvestmentCrestCapital</h2>
                     </Link>
 
                     {/* Mobile Nav Icon */}
@@ -79,9 +79,9 @@ const Header = () => {
                     </div>
 
                     {/* Google Translate positioned inside nav but on the right */}
-                    <div className=' absolute left-52 top-20 transform -translate-y-1/2'>
+                    {/* <div className=' absolute left-52 top-20 transform -translate-y-1/2'>
                         <GoogleTranslate />
-                    </div>
+                    </div> */}
                 </nav>
             </div>
         </div>
