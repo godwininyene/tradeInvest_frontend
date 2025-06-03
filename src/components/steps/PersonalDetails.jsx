@@ -14,20 +14,20 @@ const PersonalDetails = ()=>{
             <h1 className="mb-4 text-center font-semibold">Personal Details</h1>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-2 mb-4 relative'>
                 <InputField
-                    name={'name'}
-                    placeholder={'Enter your fullname'}
-                    value={formData['name' || " "]}
+                    name={'firstName'}
+                    placeholder={'Enter your firstname'}
+                    value={formData['firstName' || " "]}
                     onChange={handleChange}
-                    label={'Fullname'}
-                    error={errors.name}
+                    label={'Firstname'}
+                    error={errors.firstName}
                 />
-                <SelectField 
-                    name='gender'
-                    value={formData['gender' || " "]}
+               <InputField
+                    name={'lastName'}
+                    placeholder={'Enter your lastname'}
+                    value={formData['lastName' || " "]}
                     onChange={handleChange}
-                    label={'Gender'}
-                    options={['Male', 'Female']}
-                    error={errors.gender}
+                    label={'lastname'}
+                    error={errors.lastName}
                 />
             </div>
 
@@ -73,16 +73,6 @@ const PersonalDetails = ()=>{
                 />
                    
             </div>
-            {/* <h4 className="mt-7">Additional Information</h4>
-            <SelectField 
-                name='reason'
-                value={formData['reason' || " "]}
-                onChange={handleChange}
-                label={'Account Opening Reason'}
-                options={['Income Earning', 'Hedging', 'Speculative']}
-                error={errors.reason}
-                
-            /> */}
         </>
     )
 }

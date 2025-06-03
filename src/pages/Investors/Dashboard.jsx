@@ -59,7 +59,7 @@ export default function Dashboard() {
 
 
     return (
-        <div className="p-6 min-h-screen">
+        <div className="min-h-screen">
             {/* User Profile Section */}
             <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 mb-6">
                 <div className="flex flex-col md:flex-row items-center gap-6">
@@ -79,7 +79,7 @@ export default function Dashboard() {
                                     ref={reffid}
                                     readOnly
                                     value={`${import.meta.env.VITE_APP_URL}/users/register?refid=${user.accountId}`}
-                                    className="flex-1 p-2 rounded-l-lg border border-gray-300 dark:border-slate-700 dark:bg-slate-700 dark:text-white"
+                                    className="flex-1 min-w-0 p-2 rounded-l-lg border border-gray-300 dark:border-slate-700 dark:bg-slate-700 dark:text-white truncate"
                                 />
                                 <button
                                     onClick={copyReffLink}
@@ -92,16 +92,16 @@ export default function Dashboard() {
                                 <div className="text-sm text-green-600 mt-1">Copied to clipboard!</div>
                             )}
                         </div>
-                        <div className="mt-6 flex gap-4 justify-center md:justify-start">
+                        <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
                             <Link
                                 to="/manage/investor/investments"
-                                className="flex items-center gap-2 px-6 py-2 bg-primary-light text-white rounded-lg hover:bg-primary-dark transition-colors"
+                                className="flex items-center gap-2 px-4 py-2 bg-primary-light text-white rounded-lg hover:bg-primary-dark transition-colors"
                             >
                                 <FaChartLine className="w-5 h-5" /> Investments
                             </Link>
                             <Link
                                 to="/manage/investor/transactions"
-                                className="flex items-center gap-2 px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+                                className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
                             >
                                 <FaMoneyBillTransfer className="w-5 h-5" /> Transactions
                             </Link>

@@ -53,7 +53,7 @@ const VerifyEmail = () => {
         try {
             const response = await axios.post('api/v1/users/verify_email', {code:verificationCode});
             // If response is successful, handle success (e.g., redirect or show a message)
-            if(response.data.status == 'success') setCurrentStep(4)
+            if(response.data.status == 'success') setCurrentStep(3)
             setIsSubmitting(true);
     
         } catch (err) {

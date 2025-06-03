@@ -65,25 +65,27 @@ function App() {
       </Route>
 
 
-      <Route path='/manage' element={<AuthenticatedLayout />} errorElement={<Error />}   loader={async({request})=> await requireAuth(request)}>
+      <Route path='/manage' element={<AuthenticatedLayout />} errorElement={<Error />}>
         {/* Admin Related Routes */}
-        <Route path='admin/dashboard' element={<Dashboard />}></Route>
-        <Route path='admin/investments' element={<Investments />}></Route>
-        <Route path='admin/transactions' element={<Transactions />}></Route>
-        <Route path='admin/users' element={<Users />}></Route>
-        <Route path='admin/plans' element={<Plans />}></Route>
-        <Route path='admin/payment_options' element={<PaymentOptions />}></Route>
-        <Route path='admin/settings' element={<AdminSettings />}></Route>
-
-        
+        <Route path='admin' loader={async({ request }) => await requireAuth(request, 'admin')}>
+          <Route path='dashboard' element={<Dashboard />}></Route>
+          <Route path='investments' element={<Investments />}></Route>
+          <Route path='transactions' element={<Transactions />}></Route>
+          <Route path='users' element={<Users />}></Route>
+          <Route path='plans' element={<Plans />}></Route>
+          <Route path='payment_options' element={<PaymentOptions />}></Route>
+          <Route path='settings' element={<AdminSettings />}></Route>
+        </Route>
 
         {/* Investor Related Routes */}
-        <Route path='investor/dashboard' element={<InvestorDashboard />}></Route>
-        <Route path='investor/investments' element={<InvestorInvestments />}></Route>
-        <Route path='investor/transactions' element={<InvestorTransactions />}></Route>
-        <Route path='investor/deposit' element={<Deposit/>}></Route>
-        <Route path='investor/withdrawal' element={<Withdrawal/>}></Route>
-        <Route path='investor/settings' element={<InvestorSettings/>}></Route>
+         <Route path='investor' loader={({ request }) => requireAuth(request, 'user')}>
+          <Route path='dashboard' element={<InvestorDashboard />}></Route>
+          <Route path='investments' element={<InvestorInvestments />}></Route>
+          <Route path='transactions' element={<InvestorTransactions />}></Route>
+          <Route path='deposit' element={<Deposit/>}></Route>
+          <Route path='withdrawal' element={<Withdrawal/>}></Route>
+          <Route path='settings' element={<InvestorSettings/>}></Route>
+        </Route>
        
       
       </Route>

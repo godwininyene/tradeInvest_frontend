@@ -8,7 +8,7 @@ export default function GuestLayout() {
                 <div className='text-center mb-3 flex justify-center'>
                     <Link to='/' className="flex items-center">
                         <img src={logo} alt="logo" className='h-16 mb-2 inline-block' />
-                        <h2 className='text-black dark:text-white font-bold text-xl ml-1 inline-block'>TradeInvest</h2>
+                        <h2 className='text-black dark:text-white font-bold text-xl ml-1 inline-block'>InvestmentCrestCapital</h2>
                     </Link>
                   
                 </div>

@@ -25,7 +25,7 @@ const Headerbar = ({ user, isToggle, toggle }) => {
                         />
                        <div className='hidden lg:block'>
                             <svg
-                                className="absolute hidden  lg:inline-block left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500 dark:text-slate-400"
+                                className="absolute hidden lg:inline-block left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500 dark:text-slate-400"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -47,11 +47,11 @@ const Headerbar = ({ user, isToggle, toggle }) => {
                     <span className="relative block">
                         <IoNotificationsOutline className="h-6 w-6 text-slate-800 dark:text-slate-200 hover:text-blue-500 dark:hover:text-blue-500 transition-colors" />
                     </span>
-                    <span>
+                    <span className="flex-shrink-0"> {/* Added flex-shrink-0 to prevent shrinking */}
                         <img
                             src={user?.photo && user?.photo !== 'default.png' ? user?.photo : defaulAvatar}
                             alt="Profile"
-                            className="h-10 w-10 rounded-full bg-slate-300 dark:bg-slate-700"
+                            className="h-10 w-10 rounded-full bg-slate-300 dark:bg-slate-700 object-cover" // Added object-cover
                         />
                     </span>
                 </div>
