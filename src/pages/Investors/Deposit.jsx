@@ -119,10 +119,10 @@ const Deposit = () => {
                   <h3 className="font-medium text-gray-900 dark:text-white">
                     {option.payOption === 'bank' ? 'Bank Transfer' : 
                      option.payOption === 'mobile wallet' ? 'Mobile Wallet' : 
-                     option.payOption === 'crypto wallet' ? 'Crypto Wallet' : option.payOption}
+                     option.payOption === 'Crypto Wallet' ? 'Crypto Wallet' : option.payOption}
                   </h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    {option.bank} - {option.accountNumber}
+                    {option.payOption === 'Crypto Wallet' ? 'Get' : ' '} {option.bank} {' '} {option.payOption === 'Crypto Wallet' ? 'wallet address' : ' '}
                   </p>
                 </div>
               </div>

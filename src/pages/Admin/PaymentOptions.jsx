@@ -105,12 +105,12 @@ const PaymentOptions = () => {
     const formData = new FormData(e.target);
 
     try {
-      const res = await axios.patch(`api/v1/paymentOptions/${selectedOption._id}`, formData);
+      const res = await axios.patch(`api/v1/paymentOptions/${selectedOption.id}`, formData);
       if (res.data.status === 'success') {
         setSuccessMessage('Payment option updated successfully!');
         setPaymentOptions(prev => 
           prev.map(option => 
-            option._id === selectedOption._id ? res.data.data.paymentOption : option
+            option.id === selectedOption.id ? res.data.data.paymentOption : option
           )
         );
         setEditModal(false);
@@ -137,8 +137,8 @@ const PaymentOptions = () => {
 
     setDeleting(true);
     try {
-      await axios.delete(`api/v1/paymentOptions/${selectedOption._id}`);
-      setPaymentOptions(prev => prev.filter(option => option._id !== selectedOption._id));
+      await axios.delete(`api/v1/paymentOptions/${selectedOption.id}`);
+      setPaymentOptions(prev => prev.filter(option => option.id !== selectedOption.id));
       setEditModal(false);
       setSuccessMessage('Payment option deleted successfully!');
       setTimeout(() => setSuccessMessage(''), 3000);
@@ -151,7 +151,7 @@ const PaymentOptions = () => {
   };
 
   const getOptionIcon = (type) => {
-    switch(type) {
+    switch(type.toLowerCase()) {
       case 'bank':
         return <BsBank className="text-blue-500" />;
       case 'mobile wallet':
